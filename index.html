@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Naomi's Cheatsheet</title>
+    <link rel="stylesheet" href="css/style.css" >
+</head>
+<body>
+    <header>
+        <h3 class="header-name">Cheatsheet</h3>
+        <nav>
+            <ul class="css-link">CSS Colors</ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="title">Colors</h1>
+            <p class="colors-def">Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+        <div id="definitions">
+            <ul class="colors-explanation">
+                <li><span class="def-name">Color:</span> <span>A color can be specified by using a predefined color name</span></li>
+                <li><span class="def-name">RGB:</span> <span>An RGB color value represents RED, GREEN, and BLUE light sources (<strong> rgb(red, green, blue) </strong>). Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.</span></li>
+                <li><span class="def-name">HEX:</span> <span>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.</span></li>
+                <li><span class="def-name">HSL:</span> <span>HSL stands for hue, saturation, and lightness. (<strong> hsl(hue, saturation, lightness) </strong>)</span></li>
+                    <ul class="hsl-def">
+                        <li><span class="hsl-def-name">Hue</span> is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</li>
+                        <li><span class="hsl-def-name">Saturation</span> is a percentage value. 0% means a shade of gray, and 100% is the full color.</li>
+                        <li><span class="hsl-def-name">Lightness</span> is also a percentage. 0% is black, 50% is neither light or dark, 100% is white.</li>
+                    </ul>
+                <li><span class="def-name">RGBA:</span>  <span>RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.</span></li>
+                <li><span class="def-name">HSLA:</span> <span>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.</span></li>
+            </ul>
+        </div>
+        <div>
+            <p class="table-intro">Please see the table below for an example of 2 color names currently supported by all modern browsers.</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>RGB</th>
+                        <th>HEX</th>
+                        <th>HSL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="Tomato">
+                        <td>Tomato</td>
+                        <td>rgb(255, 99, 71)</td>
+                        <td>#ff6347</td>
+                        <td>hsl(9, 100%, 64%)</td>
+                    </tr>
+                    <tr id="DarkSeaGreen">
+                        <td>DarkSeaGreen</td>
+                        <td>rgb(143, 188, 143)</td>
+                        <td>#8fbc8f</td>
+                        <td>hsl(120, 25%, 65%)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="example-tables">
+            <p class="table-intro">Hue </p>
+            <table class="table-example">
+                <thead>
+                    <tr>
+                        <th colspan="4" id="thTomato">Tomato</th>
+                    </tr>
+                    <tr>
+                        <th>Hue</th>
+                        <th>Hex</th>
+                        <th>RGB</th>
+                        <th>HSL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="Tomato9">
+                        <td>9</td>
+                        <td>#ff6347</td>
+                        <td>rgb(255, 99, 71)</td>
+                        <td>hsl(9, 100%, 64%)</td>
+                    </tr>
+                    <tr id="Tomato120">
+                        <td>120</td>
+                        <td>#47ff47</td>
+                        <td>rgb(71, 255, 71)</td>
+                        <td>hsl(120, 100%, 64%)</td>
+                    </tr>
+                    <tr id="Tomato210">
+                        <td>210</td>
+                        <td>#47a3ff</td>
+                        <td>rgb(71, 163, 255)</td>
+                        <td>hsl(210, 100%, 64%)</td>
+                    </tr>
+                    <tr id="Tomato270">
+                        <td>270</td>
+                        <td>#a347ff</td>
+                        <td>rgb(163, 71, 255)</td>
+                        <td>hsl(270, 100%, 64%)</td>
+                    </tr>
+                    <tr id="Tomato345">
+                        <td>345</td>
+                        <td>#ff4775</td>
+                        <td>rgb(255, 71, 117)</td>
+                        <td>hsl(345, 100%, 64%)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table-example">
+                <thead>
+                    <tr>
+                        <th colspan="4" id="thDarkSeaGreen">DarkSeaGreen</th>
+                    </tr>
+                    <tr>
+                        <th>Hue</th>
+                        <th>Hex</th>
+                        <th>RGB</th>
+                        <th>HSL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="DarkSeaGreen15">
+                        <td>15</td>
+                        <td>#bc9b8f</td>
+                        <td>rgb(188, 155, 143)</td>
+                        <td>hsl(15, 25%, 65%)</td>
+                    </tr>
+                    <tr id="DarkSeaGreen120">
+                        <td>120</td>
+                        <td>#8fbc8f</td>
+                        <td>rgb(143, 188, 143)</td>
+                        <td>hsl(120, 25%, 65%)</td>
+                    </tr>
+                    <tr id="DarkSeaGreen210">
+                        <td>210</td>
+                        <td>#8fbc8f</td>
+                        <td>rgb(143, 188, 143)</td>
+                        <td>hsl(120, 25%, 65%)</td>
+                    </tr>
+                    <tr id="DarkSeaGreen270">
+                        <td>270</td>
+                        <td>#a68fbc</td>
+                        <td>rgb(166, 143, 188)</td>
+                        <td>hsl(270, 25%, 65%)</td>
+                    </tr>
+                    <tr id="DarkSeaGreen345">
+                        <td>345</td>
+                        <td>#bc8f9b</td>
+                        <td>rgb(188, 143, 155)</td>
+                        <td>hsl(345, 25%, 65%)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="example-tables">
+            <p class="table-intro">Saturation</p>
+            <table class="table-example">
+                <thead>
+                    <tr>
+                        <th colspan="4" id="thTomato">Tomato</th>
+                    </tr>
+                    <tr>
+                        <th>Sat</th>
+                        <th>Hex</th>
+                        <th>RGB</th>
+                        <th>HSL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="TomatoSat100">
+                        <td>100%</td>
+                        <td>#ff6347</td>
+                        <td>rgb(255, 99, 71)</td>
+                        <td>hsl(9, 100%, 64%)</td>
+                    </tr>
+                    <tr id="TomatoSat75">
+                        <td>75%</td>
+                        <td>#e8735e</td>
+                        <td>rgb(232, 115, 94)</td>
+                        <td>hsl(9, 75%, 64%)</td>
+                    </tr>
+                    <tr id="TomatoSat50">
+                        <td>50%</td>
+                        <td>#d18375</td>
+                        <td>rgb(209, 131, 117)</td>
+                        <td>hsl(9, 50%, 64%))</td>
+                    </tr>
+                    <tr id="TomatoSat25">
+                        <td>25%</td>
+                        <td>#ba938c</td>
+                        <td>rgb(186, 147, 140)</td>
+                        <td>hsl(9, 25%, 64%)</td>
+                    </tr>
+                    <tr id="TomatoSat5">
+                        <td>5%</td>
+                        <td>#a8a09f</td>
+                        <td>rgb(168, 160, 159)</td>
+                        <td>hsl(9, 5%, 64%)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table-example">
+                <thead>
+                    <tr>
+                        <th colspan="4" id="thDarkSeaGreen">DarkSeaGreen</th>
+                    </tr>
+                    <tr>
+                        <th>Sat</th>
+                        <th>Hex</th>
+                        <th>RGB</th>
+                        <th>HSL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="DarkSeaGreenSat100">
+                        <td>100%</td>
+                        <td>#4dff4d</td>
+                        <td>rgb(77, 255, 77)</td>
+                        <td>hsl(120, 100%, 65%)</td>
+                    </tr>
+                    <tr id="DarkSeaGreenSat75">
+                        <td>75%</td>
+                        <td>#63e963</td>
+                        <td>rgb(99, 233, 99)</td>
+                        <td>hsl(120, 75%, 65%)</td>
+                    </tr>
+                    <tr id="DarkSeaGreenSat50">
+                        <td>50%</td>
+                        <td>#79d279</td>
+                        <td>rgb(121, 210, 121)</td>
+                        <td>hsl(120, 50%, 65%)</td>
+                    </tr>
+                    <tr id="DarkSeaGreenSat25">
+                        <td>25%</td>
+                        <td>#8fbc8f</td>
+                        <td>rgb(143, 188, 143)</td>
+                        <td>hsl(120, 25%, 65%)</td>
+                    </tr>
+                    <tr id="DarkSeaGreenSat5">
+                        <td>5%</td>
+                        <td>#a1aaa1	</td>
+                        <td>rgb(161, 170, 161)</td>
+                        <td>hsl(120, 5%, 65%)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="example-tables">
+            <p class="table-intro">Lightness</p>
+            <table class="table-example">
+                <thead>
+                    <tr>
+                        <th colspan="4" id="thTomato">Tomato</th>
+                    </tr>
+                    <tr>
+                        <th>Light</th>
+                        <th>Hex</th>
+                        <th>RGB</th>
+                        <th>HSL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="TomatoLight95">
+                        <td>95%</td>
+                        <td>#ffe9e6	</td>
+                        <td>rgb(255, 233, 230)</td>
+                        <td>hsl(9, 100%, 95%)</td>
+                    </tr>
+                    <tr id="TomatoLight64">
+                        <td>64%</td>
+                        <td>#ff6347</td>
+                        <td>rgb(255, 99, 71)</td>
+                        <td>hsl(9, 100%, 64%)</td>
+                    </tr>
+                    <tr id="TomatoLight50">
+                        <td>50%</td>
+                        <td>#ff2600</td>
+                        <td>rgb(255, 38, 0)</td>
+                        <td>hsl(9, 100%, 50%)</td>
+                    </tr>
+                    <tr id="TomatoLight25">
+                        <td>25%</td>
+                        <td>#801300</td>
+                        <td>rgb(128, 19, 0)</td>
+                        <td>hsl(9, 100%, 25%)</td>
+                    </tr>
+                    <tr id="TomatoLight5" class="light-letters">
+                        <td>5%</td>
+                        <td>#1a0400	</td>
+                        <td>rgb(26, 4, 0)</td>
+                        <td>hsl(9, 100%, 5%)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table-example">
+                <thead>
+                    <tr>
+                        <th colspan="4" id="thDarkSeaGreen">DarkSeaGreen</th>
+                    </tr>
+                    <tr>
+                        <th>Light</th>
+                        <th>Hex</th>
+                        <th>RGB</th>
+                        <th>HSL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="DarkSeaGreenLight95">
+                        <td>95%</td>
+                        <td>#eff5ef</td>
+                        <td>rgb(239, 245, 239)</td>
+                        <td>hsl(120, 25%, 95%)</td>
+                    </tr>
+                    <tr id="DarkSeaGreenLight65">
+                        <td>65%</td>
+                        <td>#8fbc8f	</td>
+                        <td>rgb(143, 188, 143)</td>
+                        <td>hsl(120, 25%, 65%)</td>
+                    </tr>
+                    <tr id="DarkSeaGreenLight50">
+                        <td>50%</td>
+                        <td>#609f60</td>
+                        <td>rgb(96, 159, 96)</td>
+                        <td>hsl(120, 25%, 50%)</td>
+                    </tr>
+                    <tr id="DarkSeaGreenLight25">
+                        <td>25%</td>
+                        <td>#305030	</td>
+                        <td>rgb(48, 80, 48)</td>
+                        <td>hsl(120, 25%, 25%)</td>
+                    </tr>
+                    <tr id="DarkSeaGreenLight5" class="light-letters">
+                        <td>5%</td>
+                        <td>#0a100a</td>
+                        <td>rgb(10, 16, 10)</td>
+                        <td>hsl(120, 25%, 5%)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </main>
+</body>
+</html>
